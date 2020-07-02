@@ -149,7 +149,13 @@ public class FaceLoginActivity extends AppCompatActivity implements ViewTreeObse
         // Activity启动后就锁定为启动时的方向
 //        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         //本地人脸库初始化
-        FaceServer.getInstance().init(this);
+        //本地人脸库初始化
+        FaceServer.getInstance().unInit();
+
+        boolean init = FaceServer.getInstance().init(this);
+        if (!init){
+            FaceServer.getInstance().init(this);
+        }
         Intent intent = getIntent();
         this.useName = intent.getStringExtra("useName");
         initView();

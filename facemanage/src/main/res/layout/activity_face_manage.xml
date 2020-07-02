@@ -4,25 +4,45 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="16dp"
             tools:context="com.cdk.facemanager.activity.FaceManageActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <RelativeLayout
+            android:background="#81D4FA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="backClicked"
-            android:text="返回"/>
+            <Button
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="backClicked"
+                android:textColor="#ffffff"
+                android:background="@drawable/bt_cancel_celector"
+                android:text="返回"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="人脸管理"
+                android:textColor="#448AFF"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </RelativeLayout>
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="50dp"
+            android:textColor="#FF5252"
+            android:layout_marginTop="20dp"
             android:text="@string/notification_register"
             android:textSize="22sp"/>
 
@@ -31,6 +51,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:onClick="batchRegister"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bt_cancel_celector"
             android:text="@string/batch_register"/>
 
         <Button
@@ -38,6 +62,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:onClick="oneRegister"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bt_cancel_celector"
             android:text="@string/one_register"/>
 
         <Button
@@ -46,6 +74,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="50dp"
             android:onClick="clearFaces"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bt_cancel_celector"
             android:text="@string/clear_faces"/>
 
         <TextView
@@ -53,6 +85,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:textColor="#FF3D00"
+            android:textSize="22sp"
             android:layout_margin="50dp"/>
     </LinearLayout>
 </ScrollView>

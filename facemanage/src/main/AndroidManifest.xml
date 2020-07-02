@@ -21,6 +21,7 @@
         <activity android:name=".activity.MyRegisterAndRecognizeActivity" />
         <activity android:name=".activity.RegisterAndRecognizeActivity" />
         <activity android:name=".activity.FaceManageActivity" />
+        <activity android:name=".activity.FaceLoginActivity" />
 
     </application>
 
