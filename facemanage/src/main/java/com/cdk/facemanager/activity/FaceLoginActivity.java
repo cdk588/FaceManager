@@ -664,7 +664,6 @@ public class FaceLoginActivity extends AppCompatActivity implements ViewTreeObse
             intent.putExtra("useName", useName);
             setResult(3, intent);
             finish();
-            finish();
         }
     };
 
