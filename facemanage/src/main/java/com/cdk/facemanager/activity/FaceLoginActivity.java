@@ -660,7 +660,10 @@ public class FaceLoginActivity extends AppCompatActivity implements ViewTreeObse
 
         @Override
         public void onFinish() {
-            doLogin(useName);
+            Intent intent = new Intent();
+            intent.putExtra("useName", useName);
+            setResult(3, intent);
+            finish();
             finish();
         }
     };
