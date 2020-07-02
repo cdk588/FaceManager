@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cdk.facemanager.activity.MainActivity">
+
+    <EditText
+        android:hint="工号"
+        android:id="@+id/edt_emp_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <TextView
+        android:id="@+id/tv_emp_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <Button
+        android:text="激活引擎"
+        android:onClick="activeEngine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:text="注册"
+        android:onClick="jumpToFaceRecognizeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:text="人脸识别管理"
+        android:onClick="jumpToFaceManagerActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+</LinearLayout>
