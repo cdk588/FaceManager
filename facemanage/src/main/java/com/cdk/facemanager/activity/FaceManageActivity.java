@@ -161,11 +161,12 @@ public class FaceManageActivity extends AppCompatActivity {
                     boolean success = FaceServer.getInstance().registerBgr24(FaceManageActivity.this, bgr24, bitmap.getWidth(), bitmap.getHeight(),
                             jpgFile.getName().substring(0, jpgFile.getName().lastIndexOf(".")));
                     if (!success) {
-                        File failedFile = new File(REGISTER_FAILED_DIR + File.separator + jpgFile.getName());
-                        if (!failedFile.getParentFile().exists()) {
-                            failedFile.getParentFile().mkdirs();
-                        }
-                        jpgFile.renameTo(failedFile);
+                        Toast.makeText(FaceManageActivity.this, "有照片注册识别", Toast.LENGTH_SHORT).show();
+//                        File failedFile = new File(REGISTER_FAILED_DIR + File.separator + jpgFile.getName());
+//                        if (!failedFile.getParentFile().exists()) {
+//                            failedFile.getParentFile().mkdirs();
+//                        }
+//                        jpgFile.renameTo(failedFile);
                     } else {
                         successCount++;
                     }
