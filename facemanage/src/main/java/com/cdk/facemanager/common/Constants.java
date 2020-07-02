@@ -11,12 +11,7 @@ public class Constants {
      * IR预览数据相对于RGB预览数据的纵向偏移量，注意：是预览数据，一般的摄像头的预览数据都是 width > height
      */
     public static final int VERTICAL_OFFSET = 0;
-    public static String APP_ID;
-    public static String SDK_KEY;
-
-    public static void init(String app_id, String sdk_key){
-        APP_ID  = app_id;
-        SDK_KEY  = sdk_key;
-    };
+    public static final String APP_ID = "BXhfBjEZ1Jv4rBvXtVAd4W29oMBWLFnjUF5n9JbAJvHz";
+    public static final String SDK_KEY ="7gcdHNKV2ceS6pXZnBtzv4CSnFTAFKBtDBTKiBo69myP";
 }
 
